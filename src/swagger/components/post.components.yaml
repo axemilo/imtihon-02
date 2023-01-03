@@ -1,0 +1,110 @@
+components:
+  schemas:
+    Response:
+      type: object
+      properties:
+        post_id:
+          type: integer
+        post_user:
+          type: string
+        post_date:
+          type: date
+        post_time:
+          type: string
+        post_body:
+          type: string
+        post_desc:
+          type: string
+        post_img:
+          type: file
+        post_category:
+          type: string
+        post_subcategory:
+          type: string
+        phone:
+          type: integer
+        active:
+          type: boolean
+          description: Bu faqat admin panel uchun
+    Post:
+      type: object
+      properties:
+        post_id:
+          type: integer
+        post_user:
+          type: string
+        post_date:
+          type: date
+        post_time:
+          type: string
+        post_body:
+          type: string
+        post_desc:
+          type: string
+        post_img:
+          type: file
+        post_category:
+          type: string
+        post_subcategory:
+          type: string
+        phone:
+          type: integer
+    PostResponse:
+      type: object
+      properties:
+        status:
+          type: integer
+        message:
+          type: string
+    Category:
+      type: object
+      properties:
+        status:
+          type: integer
+        message:
+          type: string
+        data1:
+          type: object
+          properties:
+            category_id:
+              type: integer
+            category_name:
+              type: string
+        data2:
+          type: object
+          properties:
+            subcategory_id:
+              type: integer
+            subcategory_name:
+              type: string
+            category_id:
+              type: integer
+    Signup:
+      type: object
+      properties:
+        admin_id:
+          type: integer
+        admin_name:
+          type: string
+        admin_password:
+          type: integer
+        token:
+          type: string
+    Login:
+      type: object
+      properties:
+        status:
+          type: integer
+        message:
+          type: string
+        data:
+          type: object
+          properties:
+            admin_id:
+              type: integer
+            admin_name:
+              type: string
+            admin_password:
+              type: integer
+        token:
+          type: string

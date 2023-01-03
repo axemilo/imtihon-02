@@ -1,0 +1,64 @@
+/posts:
+  get:
+    tags:
+      - posts
+    responses:
+      '200':
+        description: showed how much posts here
+        content:
+          formData:
+            schema:
+              $ref: '#/components/schemas/Response'
+  post:
+    tags:
+      - posts
+    requestBody:
+      description: Create a new post
+      content:
+        formData:
+          schema:
+            $ref: '#/components/schemas/Post'
+      required: true
+    responses:
+      '200':
+      description: new post
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/PostResponse'
+
+/category:
+  get:
+    tags:
+      - category
+    responses:
+      '200':
+        description: this shows category and subcategory
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Category'
+
+/signup:
+  post:
+    tags:
+      - signup
+    responses:
+      '201':
+        description: add a new admin to the site
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Signup'
+
+/login:
+  post:
+    tags:
+      - login
+    responses:
+      '200':
+        description: this is login for admins
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Login'

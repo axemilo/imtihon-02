@@ -1,0 +1,62 @@
+[
+    {
+        "post_id": 1,
+        "post_user": "2362362362",
+        "post_title": "gasgasg",
+        "post_body": "awtqwtq",
+        "post_desc": "qwfasfas",
+        "post_date": "2023-01-04",
+        "post_category": "IT",
+        "post_subcategory": "Web dasturlash",
+        "post_time": "13:58",
+        "post_img": "1672736210427Inherent.jpeg",
+        "post_active": "online",
+        "phone": "523236236",
+        "active": true
+    },
+    {
+        "post_id": 2,
+        "post_user": "2362362362",
+        "post_title": "gasgasg",
+        "post_body": "awtqwtq",
+        "post_desc": "qwfasfas",
+        "post_date": "2023-01-04",
+        "post_category": "IT",
+        "post_subcategory": "Web dasturlash",
+        "post_time": "13:58",
+        "post_img": "1672736212780Inherent.jpeg",
+        "post_active": "online",
+        "phone": "523236236",
+        "active": true
+    },
+    {
+        "post_id": 3,
+        "post_user": "2362362362",
+        "post_title": "gasgasg",
+        "post_body": "awtqwtq",
+        "post_desc": "qwfasfas",
+        "post_date": "2023-01-04",
+        "post_category": "IT",
+        "post_subcategory": "Web dasturlash",
+        "post_time": "13:58",
+        "post_img": "1672736213708Inherent.jpeg",
+        "post_active": "online",
+        "phone": "523236236",
+        "active": true
+    },
+    {
+        "post_id": 4,
+        "post_user": "2362362362",
+        "post_title": "gasgasg",
+        "post_body": "awtqwtq",
+        "post_desc": "qwfasfas",
+        "post_date": "2023-01-04",
+        "post_category": "IT",
+        "post_subcategory": "Web dasturlash",
+        "post_time": "13:58",
+        "post_img": "1672736213720Inherent.jpeg",
+        "post_active": "online",
+        "phone": "523236236",
+        "active": true
+    }
+]

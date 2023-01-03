@@ -1,0 +1,32 @@
+.posts__list {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.post__item {
+  width: 350px;
+  margin-bottom: 30px;
+}
+
+.post__img {
+  height: 450px;
+  margin-bottom: 20px;
+}
+
+.post__title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  padding-left: 30px;
+}
+
+.post__info {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-left: 30px;
+}
+
+.header__btn {
+  display: block;
+  margin: 40px 0;
+}
