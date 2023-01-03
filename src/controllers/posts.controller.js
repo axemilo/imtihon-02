@@ -2,7 +2,11 @@ import { read, write } from '../utils/model.js'
 import path from 'path'
 const GET = (req, res) => {
   try {
+    let { subcategoryId } = req.query
+
     let posts = read('posts')
+    let subcategory = read('subcategory')
+
     return res.status(200).json({ status: 200, message: 'posts here', data: posts })
   } catch (error) {
     res.status(404).json({ status: 404, message: 'posts not found' })
@@ -10,12 +14,12 @@ const GET = (req, res) => {
 }
 
 const FIND = (req, res) => {
-  let posts = read('posts')
-
-  let { id } = req.params
-
-  let post = posts.find((i) => i.post_id == id)
-  res.send(post)
+  try {
+    let posts = read('posts')
+    let { id } = req.params
+    let post = posts.find((i) => i.post_id == id)
+    res.send(post)
+  } catch (error) {}
 }
 
 const POST = (req, res) => {
@@ -33,6 +37,7 @@ const POST = (req, res) => {
       post_time,
       post_active,
       phone,
+      subcategory_id,
     } = req.body
     let { post_img } = req.files
 
@@ -50,10 +55,12 @@ const POST = (req, res) => {
       post_time &&
       post_img &&
       post_active &&
+      subcategory_id &&
       phone
     ) {
       let newPost = {
         post_id: posts.at(-1)?.post_id + 1 || 1,
+        subcategory_id,
         post_user,
         post_title,
         post_body,
@@ -79,11 +86,8 @@ const POST = (req, res) => {
   }
 }
 
-const GET_FIND = () => {}
-
 export default {
   GET,
   FIND,
   POST,
-  GET_FIND,
 }
